@@ -109,3 +109,1035 @@ ActionController::RoutingError (No route matches [GET] "/rails"):
 
   Rendered /usr/local/rvm/rubies/ruby-1.9.3-p429/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.2ms)
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (307.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (241.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateWelcomes (20130814214604)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "welcomes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130814214604')[0m
+  [1m[35m (276.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 15 03:33:09 +0530 2013
+
+ActionController::RoutingError (uninitialized constant WelcomeController):
+  activesupport (3.2.13) lib/active_support/inflector/methods.rb:219:in `constantize'
+  activesupport (3.2.13) lib/active_support/inflector/methods.rb:218:in `each'
+  activesupport (3.2.13) lib/active_support/inflector/methods.rb:218:in `constantize'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__773204444__call__4__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `send'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `send'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.5) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.5ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 15 03:33:51 +0530 2013
+
+SyntaxError (/home/arpit/ruby/Test/app/controllers/welcomes_controller.rb:9: syntax error, unexpected ':', expecting '}'
+      format.json { render json: @welcomes }
+                                ^
+/home/arpit/ruby/Test/app/controllers/welcomes_controller.rb:20: syntax error, unexpected ':', expecting '}'
+      format.json { render json: @welcome }
+                                ^
+/home/arpit/ruby/Test/app/controllers/welcomes_controller.rb:31: syntax error, unexpected ':', expecting '}'
+      format.json { render json: @welcome }
+                                ^
+/home/arpit/ruby/Test/app/controllers/welcomes_controller.rb:47: syntax error, unexpected ':', expecting '}'
+... redirect_to @welcome, notice: 'Welcome was successfully cre...
+                              ^
+/home/arpit/ruby/Test/app/controllers/welcomes_controller.rb:48: syntax error, unexpected ':', expecting '}'
+...    format.json { render json: @welcome, status: :created, l...
+                              ^
+/home/arpit/ruby/Test/app/controllers/welcomes_controller.rb:48: syntax error, unexpected ':', expecting '='
+...render json: @welcome, status: :created, location: @welcome ...
+                              ^
+/home/arpit/ruby/Test/app/controllers/welcomes_controller.rb:50: syntax error, unexpected ':', expecting '}'
+        format.html { render action: "new" }
+                                    ^
+/home/arpit/ruby/Test/app/controllers/welcomes_controller.rb:51: syntax error, unexpected ':', expecting '}'
+...    format.json { render json: @welcome.errors, status: :unp...
+                              ^
+/home/arpit/ruby/Test/app/controllers/welcomes_controller.rb:51: syntax error, unexpected ':', expecting '='
+...json: @welcome.errors, status: :unprocessable_entity }
+                              ^
+/home/arpit/ruby/Test/app/controllers/welcomes_controller.rb:63: syntax error, unexpected ':', expecting '}'
+... redirect_to @welcome, notice: 'Welcome was successfully upd...
+                              ^
+/home/arpit/ruby/Test/app/controllers/welcomes_controller.rb:66: syntax error, unexpected ':', expecting '}'
+        format.html { render action: "edit" }
+                                    ^
+/home/arpit/ruby/Test/app/controllers/welcomes_controller.rb:67: syntax error, unexpected ':', expecting '}'
+...    format.json { render json: @welcome.errors, status: :unp...
+                              ^
+/home/arpit/ruby/Test/app/controllers/welcomes_controller.rb:67: syntax error, unexpected ':', expecting '='
+...json: @welcome.errors, status: :unprocessable_entity }
+                              ^):
+  activesupport (3.2.13) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:469:in `load_file'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:192:in `const_missing'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.13) lib/active_support/inflector/methods.rb:219:in `constantize'
+  activesupport (3.2.13) lib/active_support/inflector/methods.rb:218:in `each'
+  activesupport (3.2.13) lib/active_support/inflector/methods.rb:218:in `constantize'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__84139010__call__4__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `send'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `send'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.5) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 15 03:36:24 +0530 2013
+Processing by WelcomesController#index as HTML
+  [1m[36mWelcome Load (0.1ms)[0m  [1mSELECT "welcomes".* FROM "welcomes" [0m
+ERROR: compiling _app_views_welcomes_index_html_erb___947403586_69975213790440 RAISED compile error
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:14: syntax error, unexpected ':', expecting ')'
+...to 'Destroy', welcome, method: :delete, data: { confirm: 'Ar...
+                              ^
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:14: odd number list for Hash
+...hod: :delete, data: { confirm: 'Are you sure?' } );@output_b...
+                              ^
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:14: syntax error, unexpected '}', expecting ')'
+...: { confirm: 'Are you sure?' } );@output_buffer.safe_concat(...
+                              ^
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:16: syntax error, unexpected kEND, expecting ')'
+'); end 
+       ^
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:23: syntax error, unexpected kENSURE, expecting ')'
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:25: syntax error, unexpected kEND, expecting ')'
+Function body:           def _app_views_welcomes_index_html_erb___947403586_69975213790440(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "welcomes/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>Listing welcomes</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+'); @welcomes.each do |welcome| 
+@output_buffer.safe_concat('  <tr>
+    <td>');@output_buffer.append= ( link_to 'Show', welcome );@output_buffer.safe_concat('</td>
+    <td>');@output_buffer.append= ( link_to 'Edit', edit_welcome_path(welcome) );@output_buffer.safe_concat('</td>
+    <td>');@output_buffer.append= ( link_to 'Destroy', welcome, method: :delete, data: { confirm: 'Are you sure?' } );@output_buffer.safe_concat('</td>
+  </tr>
+'); end 
+@output_buffer.safe_concat('</table>
+
+<br />
+
+');@output_buffer.append= ( link_to 'New Welcome', new_welcome_path );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/arpit/ruby/Test/app/views/welcomes/index.html.erb:25:in `compile'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/template.rb:244:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `synchronize'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/template.rb:144:in `render'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/notifications.rb:125:in `instrument'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/template.rb:143:in `render'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:46:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:17:in `render'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:88:in `render'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:16:in `render'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/var/lib/gems/1.8/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/arpit/ruby/Test/app/controllers/welcomes_controller.rb:7:in `index'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:167:in `process_action'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:414:in `_run__155157506__process_action__1995722122__callbacks'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `send'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `send'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/var/lib/gems/1.8/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:121:in `process'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:45:in `process'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal.rb:203:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal.rb:246:in `action'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/var/lib/gems/1.8/gems/journey-1.0.4/lib/journey/router.rb:68:in `call'
+/var/lib/gems/1.8/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/var/lib/gems/1.8/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:612:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/head.rb:14:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/var/lib/gems/1.8/gems/activerecord-3.2.13/lib/active_record/query_cache.rb:64:in `call'
+/var/lib/gems/1.8/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `_run__84139010__call__4__callbacks'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `send'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `send'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/rack/logger.rb:32:in `call_app'
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `call'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/tagged_logging.rb:22:in `tagged'
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/static.rb:63:in `call'
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/engine.rb:479:in `call'
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/application.rb:223:in `call'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/handler/webrick.rb:13:in `run'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/server.rb:268:in `start'
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/commands/server.rb:70:in `start'
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/commands.rb:55
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/commands.rb:50:in `tap'
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/commands.rb:50
+script/rails:6:in `require'
+script/rails:6
+  Rendered welcomes/index.html.erb within layouts/application (94.9ms)
+Completed 500 Internal Server Error in 118ms
+
+ActionView::Template::Error (compile error
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:14: syntax error, unexpected ':', expecting ')'
+...to 'Destroy', welcome, method: :delete, data: { confirm: 'Ar...
+                              ^
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:14: odd number list for Hash
+...hod: :delete, data: { confirm: 'Are you sure?' } );@output_b...
+                              ^
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:14: syntax error, unexpected '}', expecting ')'
+...: { confirm: 'Are you sure?' } );@output_buffer.safe_concat(...
+                              ^
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:16: syntax error, unexpected kEND, expecting ')'
+'); end 
+       ^
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:23: syntax error, unexpected kENSURE, expecting ')'
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:25: syntax error, unexpected kEND, expecting ')'):
+    11:   <tr>
+    12:     <td><%= link_to 'Show', welcome %></td>
+    13:     <td><%= link_to 'Edit', edit_welcome_path(welcome) %></td>
+    14:     <td><%= link_to 'Destroy', welcome, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    15:   </tr>
+    16: <% end %>
+    17: </table>
+  app/views/welcomes/index.html.erb:25:in `compile'
+  app/controllers/welcomes_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 15 03:36:26 +0530 2013
+Processing by WelcomesController#index as HTML
+  [1m[35mWelcome Load (0.2ms)[0m  SELECT "welcomes".* FROM "welcomes" 
+ERROR: compiling _app_views_welcomes_index_html_erb___947403586_69975213790440 RAISED compile error
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:14: syntax error, unexpected ':', expecting ')'
+...to 'Destroy', welcome, method: :delete, data: { confirm: 'Ar...
+                              ^
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:14: odd number list for Hash
+...hod: :delete, data: { confirm: 'Are you sure?' } );@output_b...
+                              ^
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:14: syntax error, unexpected '}', expecting ')'
+...: { confirm: 'Are you sure?' } );@output_buffer.safe_concat(...
+                              ^
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:16: syntax error, unexpected kEND, expecting ')'
+'); end 
+       ^
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:23: syntax error, unexpected kENSURE, expecting ')'
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:25: syntax error, unexpected kEND, expecting ')'
+Function body:           def _app_views_welcomes_index_html_erb___947403586_69975213790440(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "welcomes/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>Listing welcomes</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+'); @welcomes.each do |welcome| 
+@output_buffer.safe_concat('  <tr>
+    <td>');@output_buffer.append= ( link_to 'Show', welcome );@output_buffer.safe_concat('</td>
+    <td>');@output_buffer.append= ( link_to 'Edit', edit_welcome_path(welcome) );@output_buffer.safe_concat('</td>
+    <td>');@output_buffer.append= ( link_to 'Destroy', welcome, method: :delete, data: { confirm: 'Are you sure?' } );@output_buffer.safe_concat('</td>
+  </tr>
+'); end 
+@output_buffer.safe_concat('</table>
+
+<br />
+
+');@output_buffer.append= ( link_to 'New Welcome', new_welcome_path );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/arpit/ruby/Test/app/views/welcomes/index.html.erb:25:in `compile'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/template.rb:244:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `synchronize'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/template.rb:144:in `render'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/notifications.rb:125:in `instrument'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/template.rb:143:in `render'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:46:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:17:in `render'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:88:in `render'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:16:in `render'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/var/lib/gems/1.8/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/arpit/ruby/Test/app/controllers/welcomes_controller.rb:7:in `index'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:167:in `process_action'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:414:in `_run__155157506__process_action__1995722122__callbacks'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `send'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `send'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/var/lib/gems/1.8/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:121:in `process'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:45:in `process'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal.rb:203:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal.rb:246:in `action'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/var/lib/gems/1.8/gems/journey-1.0.4/lib/journey/router.rb:68:in `call'
+/var/lib/gems/1.8/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/var/lib/gems/1.8/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:612:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/head.rb:14:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/var/lib/gems/1.8/gems/activerecord-3.2.13/lib/active_record/query_cache.rb:64:in `call'
+/var/lib/gems/1.8/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `_run__84139010__call__4__callbacks'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `send'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `send'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/rack/logger.rb:32:in `call_app'
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `call'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/tagged_logging.rb:22:in `tagged'
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/static.rb:63:in `call'
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/engine.rb:479:in `call'
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/application.rb:223:in `call'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/handler/webrick.rb:13:in `run'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/server.rb:268:in `start'
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/commands/server.rb:70:in `start'
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/commands.rb:55
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/commands.rb:50:in `tap'
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/commands.rb:50
+script/rails:6:in `require'
+script/rails:6
+  Rendered welcomes/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (compile error
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:14: syntax error, unexpected ':', expecting ')'
+...to 'Destroy', welcome, method: :delete, data: { confirm: 'Ar...
+                              ^
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:14: odd number list for Hash
+...hod: :delete, data: { confirm: 'Are you sure?' } );@output_b...
+                              ^
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:14: syntax error, unexpected '}', expecting ')'
+...: { confirm: 'Are you sure?' } );@output_buffer.safe_concat(...
+                              ^
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:16: syntax error, unexpected kEND, expecting ')'
+'); end 
+       ^
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:23: syntax error, unexpected kENSURE, expecting ')'
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:25: syntax error, unexpected kEND, expecting ')'):
+    11:   <tr>
+    12:     <td><%= link_to 'Show', welcome %></td>
+    13:     <td><%= link_to 'Edit', edit_welcome_path(welcome) %></td>
+    14:     <td><%= link_to 'Destroy', welcome, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    15:   </tr>
+    16: <% end %>
+    17: </table>
+  app/views/welcomes/index.html.erb:25:in `compile'
+  app/controllers/welcomes_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 15 03:36:28 +0530 2013
+Processing by WelcomesController#index as HTML
+  [1m[36mWelcome Load (0.2ms)[0m  [1mSELECT "welcomes".* FROM "welcomes" [0m
+ERROR: compiling _app_views_welcomes_index_html_erb___947403586_69975213790440 RAISED compile error
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:14: syntax error, unexpected ':', expecting ')'
+...to 'Destroy', welcome, method: :delete, data: { confirm: 'Ar...
+                              ^
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:14: odd number list for Hash
+...hod: :delete, data: { confirm: 'Are you sure?' } );@output_b...
+                              ^
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:14: syntax error, unexpected '}', expecting ')'
+...: { confirm: 'Are you sure?' } );@output_buffer.safe_concat(...
+                              ^
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:16: syntax error, unexpected kEND, expecting ')'
+'); end 
+       ^
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:23: syntax error, unexpected kENSURE, expecting ')'
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:25: syntax error, unexpected kEND, expecting ')'
+Function body:           def _app_views_welcomes_index_html_erb___947403586_69975213790440(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "welcomes/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>Listing welcomes</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+'); @welcomes.each do |welcome| 
+@output_buffer.safe_concat('  <tr>
+    <td>');@output_buffer.append= ( link_to 'Show', welcome );@output_buffer.safe_concat('</td>
+    <td>');@output_buffer.append= ( link_to 'Edit', edit_welcome_path(welcome) );@output_buffer.safe_concat('</td>
+    <td>');@output_buffer.append= ( link_to 'Destroy', welcome, method: :delete, data: { confirm: 'Are you sure?' } );@output_buffer.safe_concat('</td>
+  </tr>
+'); end 
+@output_buffer.safe_concat('</table>
+
+<br />
+
+');@output_buffer.append= ( link_to 'New Welcome', new_welcome_path );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/arpit/ruby/Test/app/views/welcomes/index.html.erb:25:in `compile'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/template.rb:244:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `synchronize'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/template.rb:144:in `render'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/notifications.rb:125:in `instrument'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/template.rb:143:in `render'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:46:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:17:in `render'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:88:in `render'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:16:in `render'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/var/lib/gems/1.8/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/arpit/ruby/Test/app/controllers/welcomes_controller.rb:7:in `index'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:167:in `process_action'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:414:in `_run__155157506__process_action__1995722122__callbacks'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `send'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `send'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/var/lib/gems/1.8/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:121:in `process'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:45:in `process'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal.rb:203:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_controller/metal.rb:246:in `action'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/var/lib/gems/1.8/gems/journey-1.0.4/lib/journey/router.rb:68:in `call'
+/var/lib/gems/1.8/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/var/lib/gems/1.8/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:612:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/head.rb:14:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/var/lib/gems/1.8/gems/activerecord-3.2.13/lib/active_record/query_cache.rb:64:in `call'
+/var/lib/gems/1.8/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `_run__84139010__call__4__callbacks'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `send'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `send'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/rack/logger.rb:32:in `call_app'
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `call'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/tagged_logging.rb:22:in `tagged'
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/var/lib/gems/1.8/gems/activesupport-3.2.13/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/static.rb:63:in `call'
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/engine.rb:479:in `call'
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/application.rb:223:in `call'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/handler/webrick.rb:13:in `run'
+/var/lib/gems/1.8/gems/rack-1.4.5/lib/rack/server.rb:268:in `start'
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/commands/server.rb:70:in `start'
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/commands.rb:55
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/commands.rb:50:in `tap'
+/var/lib/gems/1.8/gems/railties-3.2.13/lib/rails/commands.rb:50
+script/rails:6:in `require'
+script/rails:6
+  Rendered welcomes/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (compile error
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:14: syntax error, unexpected ':', expecting ')'
+...to 'Destroy', welcome, method: :delete, data: { confirm: 'Ar...
+                              ^
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:14: odd number list for Hash
+...hod: :delete, data: { confirm: 'Are you sure?' } );@output_b...
+                              ^
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:14: syntax error, unexpected '}', expecting ')'
+...: { confirm: 'Are you sure?' } );@output_buffer.safe_concat(...
+                              ^
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:16: syntax error, unexpected kEND, expecting ')'
+'); end 
+       ^
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:23: syntax error, unexpected kENSURE, expecting ')'
+/home/arpit/ruby/Test/app/views/welcomes/index.html.erb:25: syntax error, unexpected kEND, expecting ')'):
+    11:   <tr>
+    12:     <td><%= link_to 'Show', welcome %></td>
+    13:     <td><%= link_to 'Edit', edit_welcome_path(welcome) %></td>
+    14:     <td><%= link_to 'Destroy', welcome, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    15:   </tr>
+    16: <% end %>
+    17: </table>
+  app/views/welcomes/index.html.erb:25:in `compile'
+  app/controllers/welcomes_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 15 03:37:13 +0530 2013
+Processing by WelcomesController#index as HTML
+  [1m[35mWelcome Load (0.2ms)[0m  SELECT "welcomes".* FROM "welcomes" 
+  Rendered welcomes/index.html.erb within layouts/application (2.1ms)
+Compiled scaffolds.css  (22ms)  (pid 6139)
+Compiled welcomes.css  (1ms)  (pid 6139)
+Compiled application.css  (34ms)  (pid 6139)
+Compiled jquery.js  (5ms)  (pid 6139)
+Compiled jquery_ujs.js  (0ms)  (pid 6139)
+Compiled welcomes.js  (507ms)  (pid 6139)
+Compiled application.js  (561ms)  (pid 6139)
+Completed 200 OK in 750ms (Views: 747.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Thu Aug 15 03:37:14 +0530 2013
+Served asset /application.css - 200 OK (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Thu Aug 15 03:37:14 +0530 2013
+Served asset /scaffolds.css - 200 OK (1ms)
+
+
+Started GET "/assets/welcomes.css?body=1" for 127.0.0.1 at Thu Aug 15 03:37:14 +0530 2013
+Served asset /welcomes.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Thu Aug 15 03:37:14 +0530 2013
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Thu Aug 15 03:37:14 +0530 2013
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/welcomes.js?body=1" for 127.0.0.1 at Thu Aug 15 03:37:14 +0530 2013
+Served asset /welcomes.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Thu Aug 15 03:37:14 +0530 2013
+Served asset /application.js - 200 OK (9ms)
+
+
+Started GET "/welcomes/new" for 127.0.0.1 at Thu Aug 15 03:37:18 +0530 2013
+Processing by WelcomesController#new as HTML
+  Rendered welcomes/_form.html.erb (4.5ms)
+  Rendered welcomes/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 64ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Thu Aug 15 03:37:19 +0530 2013
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Thu Aug 15 03:37:19 +0530 2013
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcomes.css?body=1" for 127.0.0.1 at Thu Aug 15 03:37:19 +0530 2013
+Served asset /welcomes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcomes.js?body=1" for 127.0.0.1 at Thu Aug 15 03:37:19 +0530 2013
+Served asset /welcomes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Thu Aug 15 03:37:19 +0530 2013
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Thu Aug 15 03:37:19 +0530 2013
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Thu Aug 15 03:37:19 +0530 2013
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/welcomes" for 127.0.0.1 at Thu Aug 15 03:37:20 +0530 2013
+Processing by WelcomesController#create as HTML
+  Parameters: {"authenticity_token"=>"a44tzuhNXNDCvwti7nwSRUTbwStOClNyUYyWtcaa09g=", "utf8"=>"✓", "commit"=>"Create Welcome"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (30.8ms)[0m  INSERT INTO "welcomes" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Wed, 14 Aug 2013 22:07:20 UTC +00:00], ["updated_at", Wed, 14 Aug 2013 22:07:20 UTC +00:00]]
+  [1m[36m (289.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/welcomes/1
+Completed 302 Found in 327ms (ActiveRecord: 320.8ms)
+
+
+Started GET "/welcomes/1" for 127.0.0.1 at Thu Aug 15 03:37:21 +0530 2013
+Processing by WelcomesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mWelcome Load (0.3ms)[0m  SELECT "welcomes".* FROM "welcomes" WHERE "welcomes"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered welcomes/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 24ms (Views: 17.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Thu Aug 15 03:37:21 +0530 2013
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcomes.js?body=1" for 127.0.0.1 at Thu Aug 15 03:37:21 +0530 2013
+Served asset /welcomes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcomes.css?body=1" for 127.0.0.1 at Thu Aug 15 03:37:21 +0530 2013
+Served asset /welcomes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Thu Aug 15 03:37:21 +0530 2013
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Thu Aug 15 03:37:21 +0530 2013
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Thu Aug 15 03:37:21 +0530 2013
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Thu Aug 15 03:37:21 +0530 2013
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/welcomes" for 127.0.0.1 at Thu Aug 15 03:37:23 +0530 2013
+Processing by WelcomesController#index as HTML
+  [1m[36mWelcome Load (0.1ms)[0m  [1mSELECT "welcomes".* FROM "welcomes" [0m
+  Rendered welcomes/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Thu Aug 15 03:37:23 +0530 2013
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcomes.css?body=1" for 127.0.0.1 at Thu Aug 15 03:37:23 +0530 2013
+Served asset /welcomes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Thu Aug 15 03:37:23 +0530 2013
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Thu Aug 15 03:37:23 +0530 2013
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Thu Aug 15 03:37:23 +0530 2013
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcomes.js?body=1" for 127.0.0.1 at Thu Aug 15 03:37:23 +0530 2013
+Served asset /welcomes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Thu Aug 15 03:37:23 +0530 2013
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/welcomes/1" for 127.0.0.1 at Thu Aug 15 03:37:26 +0530 2013
+Processing by WelcomesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"a44tzuhNXNDCvwti7nwSRUTbwStOClNyUYyWtcaa09g=", "id"=>"1"}
+  [1m[35mWelcome Load (0.1ms)[0m  SELECT "welcomes".* FROM "welcomes" WHERE "welcomes"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "welcomes" WHERE "welcomes"."id" = ?  [["id", 1]]
+  [1m[36m (310.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/welcomes
+Completed 302 Found in 316ms (ActiveRecord: 311.2ms)
+
+
+Started GET "/welcomes" for 127.0.0.1 at Thu Aug 15 03:37:26 +0530 2013
+Processing by WelcomesController#index as HTML
+  [1m[35mWelcome Load (0.1ms)[0m  SELECT "welcomes".* FROM "welcomes" 
+  Rendered welcomes/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Thu Aug 15 03:37:26 +0530 2013
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Thu Aug 15 03:37:26 +0530 2013
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcomes.js?body=1" for 127.0.0.1 at Thu Aug 15 03:37:26 +0530 2013
+Served asset /welcomes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Thu Aug 15 03:37:26 +0530 2013
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Thu Aug 15 03:37:26 +0530 2013
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcomes.css?body=1" for 127.0.0.1 at Thu Aug 15 03:37:26 +0530 2013
+Served asset /welcomes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Thu Aug 15 03:37:27 +0530 2013
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
