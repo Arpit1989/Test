@@ -24,15 +24,25 @@
 	<header id="mainheader">
 	<img src="/assets/logo.jpg" width="250" height="120" alt="CleanRed | Free CSS Template"> 
     <h1 id="sitename">Welcome!!</h1>
+    <div class ="logger">
+    <% if current_user %>
+    Logged in as <%= current_user.email %>.
+    <%= link_to "Log Out", logout_path %>
+    <% else %>
+    <%= link_to "Sign Up", signup_path %> or
+    <%= link_to "Log In", login_path %>
+    <% end %>
+    </div>
     </header>
     <nav id="mainnav">
 		<ul>
-        	<li class="current"><%=link_to "Home",welcome_index_path %></li>
+        	<li class ="current"><%=link_to "Home",welcome_index_path %></li>
             <li><%=link_to "My Work",welcome_work_path %></li>
             <li><%=link_to "About",welcome_about_path %></li>
             <li><%=link_to "Contact",welcome_contact_path %></li>
         </ul>
 	</nav>
+
 
 	<div id="search">
     	<form action="#">
@@ -78,7 +88,7 @@
 <div class="myphoto">
 
 
-  <img src="/assets/imgthumb.jpg" width="120" height="130" alt="your photo"></div>
+  <img src="/assets/mypic.png" width="120" height="130" alt="your photo"></div>
 <div class="about-text">
 <p>
 

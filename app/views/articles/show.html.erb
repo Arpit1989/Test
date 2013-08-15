@@ -8,10 +8,20 @@
     <section id="homemain">
     <article class="post singlepost">
     <header>
-    <h2><a href="#">I am a web designer</a></h2>
+    <h2><%= @article.title %></h2>
     </header>
     <div class="entry">
-    
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Post:</b>
+  <%= @article.post %>
+</p>
+
+
+<%= link_to 'Edit', edit_article_path(@article), :class => "btn btn-small" %> 
+<%= link_to 'Back', articles_path , :class => "btn btn-small"%>
     </div>
     </article></section>
     
@@ -25,4 +35,3 @@
     <div class="clear"></div>
   </section>
 </section>
-

@@ -1,0 +1,52 @@
+<section id="right">
+    <header id="header-small">
+    <h2>My Work </h2>
+   </header>
+  <div class="clear"></div>
+  
+    <section id="contents">
+    <section id="homemain">
+    <article class="post singlepost">
+    <header>
+    <h2><a href="#">My Articles</a></h2>
+    </header>
+    <div class="entry">
+    
+<table class ="article_table">
+  <tr>
+    <th>Title</th>
+    <th>Post</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @articles.each do |article| %>
+  <tr>
+    <td><%= article.title %></td>
+    <td><%= article.post %></td>
+    <td><%= link_to 'Show', article %></td>
+    <td><%= link_to 'Edit', edit_article_path(article) %></td>
+    <td><%= link_to 'Destroy', article, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Article', new_article_path, :class =>"btn btn-primary" %>
+    
+    </div>
+    </article></section>
+    
+    
+    <aside id="rightsidebar">
+    <div class="imagepost">
+    <img src="/assets/rain.jpg" width="170" height="165" alt="rain">
+    <p class="caption">Work in Progress!!</p>
+    </div>
+    </aside>
+    <div class="clear"></div>
+  </section>
+</section>
+

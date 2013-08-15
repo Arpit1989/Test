@@ -5,29 +5,30 @@
             <h2>Hello there, Work is Still in progress! </h2>
             <p>I am a Web User Interface designer and Ruby On Rails Developer with passion for art, photography and web standards. I make clean, smart & usable websites. If you need a website, <a href="#">let's talk</a></p>
             </div>
-                    <a href="#" class="resume">Download Resume</a>
+                    <a href="http://in.linkedin.com/pub/arpit-kulshrestha/5b/39/aa2" target= "_blank" class="resume">Linkedin</a>
 
         </div>
     </header>
     
     <section id="contents">
     <section id="homemain">
+    <% @articles.each do |@article| %>
     <article class="post">
     <header>
-    <h2><a href="#">Article Title</a></h2>
-    <span class="articlemeta">Posted on 12 June 2013 under <a href="#">CSS Templates</a></span>
+    <h2><%= link_to "#{@article.title}", article_path(@article.id) %></h2>
+    <span class="articlemeta">Posted on <%= @article.created_at %> under <a href="#">Category</a></span>
     
     </header>
     <div class="entry">
     
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis placerat eleifend. Nam vel cursus nulla. Nunc quis tellus et tellus auctor ullamcorper. Cum sociis natoque 		
-    penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id purus risus, id vestibulum felis.  <a href="#">Read More</a></p>
+    <p><%= @article.post.first(200) %><%= link_to "Read more", article_path(@article.id) %></p>
     
     </div>
     </article>
+    <% end %>
     
     
-    <a href="blog.html"><img src="/assets/viewmorebtn.jpg" width="135" height="36" alt="view more"></a>
+    <a href="#"><img src="/assets/viewmorebtn.jpg" width="135" height="36" alt="view more"></a>
     </section>
     <section id="photos">
     <h2 class="subhead">Photoblog</h2>

@@ -12,4 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap-tooltip
 //= require_tree .
+
+
+var nav = $(function(){
+    $('#mainnav li').click(function(){
+        $("li").removeClass('current');
+        $(this).addClass('current');
+    });
+});

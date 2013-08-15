@@ -1,0 +1,54 @@
+<section id="right">
+    <header id="header-small">
+    <h2>Make your Own Website or Share With Us</h2>
+   </header>
+  <div class="clear"></div>
+  
+    <section id="contents">
+    <section id="homemain">
+    <article class="post singlepost">
+    <header>
+    <h2><a href="#">Sign Up</a></h2>
+    </header>
+    <div class="entry">
+
+<%= form_for @user do |f| %>
+  <% if @user.errors.any? %>
+    <div class="error_messages">
+      <h2>Form is invalid</h2>
+      <ul>
+        <% @user.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation %>
+  </div>
+  <div class="actions"><%= f.submit "Sign Up",:class => "btn btn-primary" %></div>
+<% end %>
+    
+</div>
+    </article></section>
+    
+    
+    <aside id="rightsidebar">
+    <div class="imagepost">
+    <img src="/assets/rain.jpg" width="170" height="165" alt="rain">
+    <p class="caption">Work in Progress!!</p>
+    </div>
+    </aside>
+    <div class="clear"></div>
+  </section>
+</section>
