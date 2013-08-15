@@ -21,7 +21,7 @@
     </header>
     <div class="entry">
     
-    <p><%= article.post.first(200) %><%= link_to "Read more", article_path(article.id) %></p>
+    <p><%= article.post.first(200).html_safe %><%= link_to "  Read more", article_path(article.id) %></p>
     
     </div>
     </article>
