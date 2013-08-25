@@ -18,6 +18,7 @@ resources :sessions
   get "welcome/about"
   get "welcome/contact"
   get "welcome/work"
+  match 'welcome/index' => 'welcome#email' , :via => :post
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

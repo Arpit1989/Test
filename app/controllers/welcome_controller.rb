@@ -7,6 +7,13 @@ class WelcomeController < ApplicationController
       format.html
     end
   end
+  
+  def email
+    p params
+
+    redirect_to :back
+  end
+  
   def about
   	respond_to do |format|
       format.js

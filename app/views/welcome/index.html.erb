@@ -3,13 +3,46 @@
    		<div id="intro">
         	<div id="introwrap">
             <h2>Hello there, Work is Still in progress! </h2>
-            <p>I am a Web User Interface designer and Ruby On Rails Developer with passion for art, photography and web standards. I make clean, smart & usable websites. If you need a website, <a href="#">let's talk</a></p>
+            <p>I am a Web User Interface designer and Ruby On Rails Developer with passion for art, photography and web standards. I make clean, smart & usable websites. If you need a website, <a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal">Lets Talk</a></p>
             </div>
                     <a href="http://in.linkedin.com/pub/arpit-kulshrestha/5b/39/aa2" target= "_blank" class="resume">Linkedin</a>
 
         </div>
     </header>
     
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>  
+<script src="/twitter-bootstrap/twitter-bootstrap-v2/js/bootstrap-modal.js"></script>
+
+           <!-- Button to trigger modal -->
+    
+     
+    <!-- Modal -->
+    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Please Provide Your Requirements</h3>
+    </div>
+    <div class="modal-body">
+    <%= form_for welcome_index_path(@email), :method => :post do |f| %>
+
+    <div class="field">
+    <%= f.label " Your Email Address" %><br />
+    <%= f.text_field :email %>
+    </div>
+    <div class="email">
+    <%= f.label "Your Requirement" %><br />
+    <%= f.text_area :details %>
+    </div>
+    
+    </div>
+    <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    <%= f.submit "Submit", :class => "btn btn-primary" %>
+    </div>
+    </div>
+    <% end %>
+
     <section id="contents">
     <section id="homemain">
     <% @articles.each do |article| %>
